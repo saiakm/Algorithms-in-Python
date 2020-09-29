@@ -1,4 +1,5 @@
 #Counting inversions
+# Given an array A of n integers, an inversion in A is a pair (i; j) of indices such that i < j and A[i] > A[j].1
 def merge_and_count(B,C,n1,n2):
     count= 0
     A,i,j = [],0,0
@@ -20,9 +21,6 @@ def sort_and_count(A,n):
         (C,m2) = sort_and_count(A[n//2:],n-n//2)
         (A,m3) = merge_and_count(B,C,n//2,n-n//2)
         return (A,m1+m2+m3)
-#A=[3,8,12,20,32,48,5,7,9,25,29]
-#n = len(A)
-#print(sort_and_count(A,n))
 
 input_array=[]
 try:
