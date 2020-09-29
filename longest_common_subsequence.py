@@ -1,4 +1,5 @@
 #Longest Common Subsequence
+#Given two strings, the algorithm will find the longest common subsequence between these strings
 def lcs(A,B):
     n = len(A)
     m = len(B)
